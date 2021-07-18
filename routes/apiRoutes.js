@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const noteTaking = require('../db');
+const { noteTaking } = require('../db/store.js');
 
 module.exports = app => {
 
