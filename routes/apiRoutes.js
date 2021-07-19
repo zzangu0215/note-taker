@@ -26,6 +26,19 @@ module.exports = app => {
     // console.log(`New note ID is: ${newNote.id}`);
     // setID(newNote);
 
+    // noteTaking
+    //   .push(newNote)
+    //   .then(data => {
+    //     noteTaking.write(data);
+    //     res.json(data);
+    //     console.log(`Added new note: ${newNote.title}
+    //     New note ID is: ${newNote.id}\n`);
+    //   })
+    //   .catch(err => {
+    //     console.log(err);
+    //     return res.status(500).end();
+    //   }); 
+
     noteTaking.push(newNote);
     noteTaking
       .getAll()
