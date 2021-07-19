@@ -16,10 +16,11 @@
 As a busy web developer, don't you need to have a note taking app for everything what you are currently thinking about?   
 Visit my [**Note Taker App**](https://notetaker-sjp.herokuapp.com/) to jot down everything you want to!  
 
-Look at the documentation carefully and grab a wonderful **Team Profile Page** for your team!
-
 ## ❗ Features
-
+1. Add Notes! You can have up to 1,000,000 notes in my app!
+2. View Notes from your click! You can go back to your notes and see what you put there!
+3. Delete Notes! You put some wrong notes by mistake, just erase it!  
+**Notes:** You cannot edit your note once you add it. Be careful before you upload the note!
   ![Image Caption](images/add_questions.PNG)
 
 ## 💾 Installation

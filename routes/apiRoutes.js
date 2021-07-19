@@ -17,7 +17,7 @@ module.exports = app => {
   app.post('/api/notes', (req, res) => {
     const newNote = req.body;
 
-    const randomNum = Math.floor((Math.random()*10000) + 1);
+    const randomNum = Math.floor((Math.random()*1000000) + 1);
     newNote.id = randomNum;
 
     noteTaking
