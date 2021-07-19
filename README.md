@@ -4,7 +4,7 @@
 
 ## Table of Contents
 - [**Description**](#-description)
-- [**Important Features**](#-important-features)
+- [**Features**](#-features)
 - [**Installation**](#-installation)
 - [**Usage**](#-usage)
 - [**License**](#-license)
@@ -18,7 +18,7 @@ Visit my [**Note Taker App**](https://notetaker-sjp.herokuapp.com/) to jot down 
 
 Look at the documentation carefully and grab a wonderful **Team Profile Page** for your team!
 
-## ❗ Important Features
+## ❗ Features
 
   ![Image Caption](images/add_questions.PNG)
 
