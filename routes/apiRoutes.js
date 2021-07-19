@@ -19,28 +19,42 @@ module.exports = app => {
   app.post('/api/notes', (req, res) => {
     const newNote = req.body;
 
-    // const randomNum = Math.floor((Math.random()*10000) + 1);
-    // newNote.id = `${randomNum}`;
+    const randomNum = Math.floor((Math.random()*10000) + 1);
+    newNote.id = `${randomNum}`;
 
         // newNote.id = `${data.length}`;
     // console.log(`New note ID is: ${newNote.id}`);
-    setID(newNote);
+    // setID(newNote);
 
+    noteTaking.push(newNote);
     noteTaking
-      .push(newNote)
-      .then(
-        noteTaking.getAll()
-        .then(data => {
-          noteTaking.write(data);
-          res.json(data);
-          console.log(`Added new note: ${newNote.title}
-          New note ID is: ${newNote.id}\n`);
-        })
-      )
+      .getAll()
+      .then(data => {
+        noteTaking.write(data);
+        res.json(data);
+        console.log(`Added new note: ${newNote.title}
+        New note ID is: ${newNote.id}\n`);
+      })
       .catch(err => {
         console.log(err);
         return res.status(500).end();
-      })       
+      }); 
+  
+    // noteTaking
+    //   .push(newNote)
+    //   .then(
+    //     noteTaking.getAll()
+    //     .then(data => {
+    //       noteTaking.write(data);
+    //       res.json(data);
+    //       console.log(`Added new note: ${newNote.title}
+    //       New note ID is: ${newNote.id}\n`);
+    //     })
+    //   )
+    //   .catch(err => {
+    //     console.log(err);
+    //     return res.status(500).end();
+    //   })       
   })
 
   app.get('/api/notes/:id', (req, res) => {
