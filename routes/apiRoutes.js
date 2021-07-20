@@ -28,7 +28,7 @@ module.exports = app => {
       .catch(err => {
         console.log(err);
         return res.status(500).end();
-      }); ;   
+      }); 
   })
 
   app.get('/api/notes/:id', (req, res) => {
